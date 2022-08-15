@@ -1,0 +1,282 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.mp{
+	padding: 10px 10%;
+}
+span{
+	color: #ff0000;
+}
+header nav .brand img{
+	width: 70%;
+}
+header nav{
+	background: rgba(0, 0, 0, .3);
+	display: flex;
+	padding: 10px 10% !important;
+	position: fixed;
+	z-index: 2;
+	width: 85%;
+}
+header nav .menu ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+header nav .menu ul li a{
+	padding: 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	color: white;
+}
+.header-text{
+	background: url('images/head.png');
+	color: white;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+}
+.header-text h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+.header-text::before{
+	content: "";
+	clear: both;
+	display: block;
+
+	background: rgba(0, 0, 0, .4);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+button{
+	border: none;
+	padding: 10px 15px;
+	background: #fe320a;
+	color: white;
+	text-transform: capitalize;
+}
+
+.head-text{
+	width: 25%;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.head-text h2{
+	margin: 25px 0 10px 0;
+	position: relative;
+}
+.head-text h2::after{
+	content: '';
+	clear: both;
+	display: block;
+
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background: #fe320a;
+	position: absolute;
+	bottom: -55%;
+	left: 50%;
+}
+.head-text hr{
+	height: 1px;
+	border: none;
+	background: #fe320a;
+	width: 50%;
+}
+.about .left img{
+	width: 100%;
+}
+.about .left{
+	width: 30%;
+	margin: 2%;
+	position: relative;
+}
+.about .about-text{
+	display: flex;
+}
+.about .right{
+	width: 62%;
+	margin: 2%;
+}
+.about .left .social{
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+}
+.about .left .social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about .left .social ul a{
+	padding: 7px 8px;
+	margin: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0, 0, 0, .4);
+	color: white;
+	transition: .8s;
+}
+.about .left .social ul a:hover{
+	background: white;
+	color: black;
+}
+
+.out{
+	background: rgba(0, 0, 0, .8);
+	height: 16px;
+	border-radius: 5px;
+	margin: 0 50px;
+	text-align: right;
+	color: white;
+	font-size: 10px;
+	position: relative;
+}
+.out p{
+	padding-top: 2.5px;
+}
+.out .in1,
+.out .in2,
+.out .in3{
+	background: #fe320a;
+	height: 8px;
+	border-radius: 3px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translate(0, -50%);
+}
+.out .in1{
+	width: 60%;
+}
+.out .in2{
+	width: 70%;
+}
+.out .in3{
+	width: 90%;
+}
+.portfolio .col{
+	width: 25%;
+	margin: 2%;
+	position: relative;
+}
+.portfolio .col img{
+	width: 100%;
+}
+.portfolio .col .over{
+	background: rgba(255, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.portfolio .col img:hover + .over{
+	display: flex;
+} 
+
+.team .col{
+	width: 20%;
+	margin: 2%;
+	position: relative;
+
+}
+.team .col img{
+	width: 100%;
+	border-bottom: 7px solid red;
+}
+.team .col img:hover + .over{
+	display: block;
+}
+.team .col .over{
+	background: rgba(255, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	display: none;
+	color: white;
+}
+.team .col .over .social{
+	background: rgba(255, 0, 0, .8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.team .col .over .social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.team .col .over .social ul a{
+	padding: 7px 8px;
+	margin: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0, 0, 0, .4);
+	color: white;
+	transition: .8s;
+	font-size: 13px;
+}
+.team .col .over .social ul a:hover{
+	background: white;
+	color: black;
+}
+.team .col .over .social h4{
+	margin: 5px;
+}
+
+.resmenu{
+	text-align: center;
+	padding: 8px 0;
+	background: black;
+	display: none;
+}
+
+.resmenu a{
+	color: white;
+}
+
+@media all and (max-width: 768px){
+	header nav{
+		display: none;
+	}
+	.resmenu{
+		display: block;
+	}
+}
